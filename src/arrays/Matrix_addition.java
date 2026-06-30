@@ -1,37 +1,57 @@
 
 package arrays;
+
 import java.util.Scanner;
+
 public class Matrix_addition {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Scanner sc = new Scanner (System.in);
+        Scanner sc = new Scanner(System.in);
+        // take value  of rows and  columns
+        System.out.print("Enter the value of rows :- ");
+        int rows = sc.nextInt();
 
         System.out.print("Enter the value of rows :- ");
-        int rows =sc.nextInt();
-
-        System.out.print("Enter the value of rows :- ");
-        int columns=sc.nextInt();
-
-        int [][] arr1 = new int [rows][columns];
+        int columns = sc.nextInt();
+        // Declares, creates, and initializes a 2D array
+        int[][] arr1 = new int[rows][columns];
 
 
-        for(int i = 0;i<arr1.length;i++){
-            for (int j= 0;j<arr1[i].length;j++){
-                arr1[i][j]=sc.nextInt();
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                arr1[i][j] = sc.nextInt();
             }
         }
 
+        // display array1
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
 
-//        for(int[] matrixAdd : arr1){
-//            System.out.println(matrixAdd);
-//        }  gives garbage values
+                System.out.print(" " + arr1[i][j]);
 
-for(int i = 0;i<arr1.length;i++){
-    for (int j =0;j<arr1[i].length;j++){
-        System.out.print(" "+arr1[i][j]);
-    }
-    System.out.println();
-}
+            }
+            System.out.println();
+        }
+
+        // Declares, creates, and initializes a 2D array
+
+        int[][] arr2 = new int[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                arr2[i][j] = sc.nextInt();
+            }
+        }
+
+        //display array2
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+
+                System.out.print(" " + arr2[i][j]);
+            }
+            System.out.println();
+        }
+
+
     }
 
 }

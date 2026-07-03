@@ -12,10 +12,12 @@ public class Fibonacci_Series {
 
         if (n<=0){
             System.out.println("Invalid input ! please Enter the number Greater than 0 ");
+            return;
         }
 
         else if(n==1){
             System.out.print(prev);
+            return;
         }
         else {
             System.out.print(" "+prev);

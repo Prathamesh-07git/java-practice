@@ -10,11 +10,17 @@ public class Pass_by_Value {
 Definition:
 The original variable itself is passed to the method.
 If the method changes it, the original variable also changes.
+
+Java uses only pass by value because it makes the language simpler, safer, and more predictable.
+Every method receives a copy of the argument, preventing methods from accidentally replacing or
+directly modifying the caller's variables
  */
-    static void change(int x){
-            x=100;
+    static void change(int x) {
+//        x = 100;
+        System.out.println(x);
     }
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         int a = 10;
 
         change(a);

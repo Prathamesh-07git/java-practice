@@ -20,7 +20,7 @@ public class Strings_In_Java {
 
 
         for(int i = 0;i<name.length();i++){
-            System.out.printc(name.charAt(i)+"@");
+            System.out.print(name.charAt(i)+"@");
         }
 
 

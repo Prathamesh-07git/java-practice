@@ -12,6 +12,10 @@ public class StringBuilderDemo {
 
         System.out.println(sb.reverse());
 
+        System.out.println(sb.reverse());
+
+        System.out.println(sb.append("is"));
+
 
 
     }

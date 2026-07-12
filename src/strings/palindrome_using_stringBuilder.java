@@ -7,5 +7,8 @@ public class palindrome_using_stringBuilder {
     public static void main(String [] args){
         // Reverse the string using StringBuilder
 
+
+
+
     }
 }
